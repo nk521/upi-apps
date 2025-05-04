@@ -1,0 +1,55 @@
+---
+import fs from "node:fs/promises";
+import path from "node:path";
+import Table from "../components/Table.astro";
+
+const dataPath = path.resolve("./public/apps.json");
+const jsonData = await fs.readFile(dataPath, "utf-8");
+const upiApps = JSON.parse(jsonData);
+---
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>UPI App Directory</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="bg-gray-50 text-gray-800 font-sans">
+        <main class="max-w-4xl mx-auto p-6">
+            <h1 class="text-4xl font-bold mb-4 mt-4">
+                UPI Apps
+            </h1>
+            <p class="text-gray-600 mb-1">
+                A curated collection of UPI apps, featuring their names, Android
+                package names, and Play Store links.
+            </p>
+            <p class="text-gray-600 mb-5">
+                You can access this table's JSON source here: <a
+                    href="/apps.json"
+                    target="_blank"
+                    class="underline"
+                    style="color: #cb2a42;">/apps.json</a
+                >.
+            </p>
+
+            <!-- <div class="overflow-x-auto shadow rounded-lg bg-white p-4">
+                <UpiTable apps={upiApps} />
+            </div> -->
+
+            <hr class="text-gray-600 mb-5"/>
+
+            <div class="relative overflow-x-auto">
+                <Table apps={upiApps} captionTitle="">
+                    <!-- <span slot="captionContent">
+                        <p class="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
+                        </p>
+                    </span> -->
+                </Table>
+            </div>
+        </main>
+    </body>
+</html>

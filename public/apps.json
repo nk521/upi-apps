@@ -1,0 +1,12 @@
+[
+    {
+        "name": "AGoogle Pay",
+        "androidPackage": "com.google.android.apps.nbu.paisa.user",
+        "androidLink": "https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.paisa.user"
+    },
+    {
+        "name": "PhonePe",
+        "androidPackage": "com.phonepe.app",
+        "androidLink": "https://play.google.com/store/apps/details?id=com.phonepe.app"
+    }
+]

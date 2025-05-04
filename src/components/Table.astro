@@ -1,0 +1,42 @@
+---
+const { apps, captionTitle } = Astro.props;
+---
+
+<table
+    class="w-full text-sm text-left rtl:text-right text-gray-500"
+>
+    {
+        captionTitle != "" &&
+        <caption
+            class="p-5 text-lg font-semibold text-left rtl:text-right text-gray-900 bg-white"
+        >
+            {captionTitle}
+            <slot name="captionContent" />
+        </caption>
+    }
+    <thead
+        class="text-xs text-gray-700 uppercase border border-pink-100"
+    >
+        <tr class="bg-white">
+            <th scope="col" class="px-6 py-3 border-r border-pink-100"> App Name </th>
+            <th scope="col" class="px-6 py-3"> Package Name </th>
+        </tr>
+    </thead>
+    <tbody>
+        {
+            apps.map((app, idx) => (
+                <tr
+                    class="odd:bg-white even:bg-gray-50 bg-white border-b border-pink-100 hover:bg-gray-50"
+                >
+                    <th
+                        scope="row"
+                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-r border-l border-pink-100"
+                    >
+                        {app.name}
+                    </th>
+                    <td class="px-6 py-4 border-r border-pink-100"> <a href={app.androidLink} class="underline text-pink-700" target="_blank">{app.androidPackage}</a> </td>
+                </tr>
+            ))
+        }
+    </tbody>
+</table>
