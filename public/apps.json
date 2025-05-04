@@ -1,12 +1,321 @@
 [
     {
-        "name": "AGoogle Pay",
+        "name": "Aditya Birla Capital Digital",
+        "androidPackage": "com.adityabirlacapitaldigital.OneApp",
+        "tpap": true,
+        "handles": [
+            "abcdicici"
+        ]
+    },
+    {
+        "name": "Amazon Pay",
+        "androidPackage": "in.amazon.mShop.android.shopping",
+        "tpap": true,
+        "handles": [
+            "apl",
+            "yapl",
+            "rapl"
+        ]
+    },
+    {
+        "name": "Bajaj Finserv",
+        "androidPackage": "org.altruist.BajajExperia",
+        "tpap": true,
+        "handles": [
+            "abfspay"
+        ]
+    },
+    {
+        "name": "BharatPe",
+        "androidPackage": "com.bharatpe.app",
+        "tpap": true,
+        "handles": [
+            "bpunity"
+        ]
+    },
+    {
+        "name": "CRED",
+        "androidPackage": "com.dreamplug.androidapp",
+        "tpap": true,
+        "handles": [
+            "axisb",
+            "yescred"
+        ]
+    },
+    {
+        "name": "Curie Money",
+        "androidPackage": "com.yield.curie_money",
+        "tpap": true,
+        "handles": [
+            "yescurie"
+        ]
+    },
+    {
+        "name": "FamApp by Trio",
+        "androidPackage": "com.fampay.in",
+        "tpap": true,
+        "handles": [
+            "yesfam"
+        ]
+    },
+    {
+        "name": "Fi Money",
+        "androidPackage": "com.epifi.paisa",
+        "tpap": true,
+        "handles": [
+            "fifederal"
+        ]
+    },
+    {
+        "name": "Flipkart UPI",
+        "androidPackage": "com.flipkart.android",
+        "tpap": true,
+        "handles": [
+            "fkaxis"
+        ]
+    },
+    {
+        "name": "Freo",
+        "androidPackage": "com.moneytap.bnpl.app",
+        "tpap": true,
+        "handles": [
+            "freoicici"
+        ]
+    },
+    {
+        "name": "Genwise",
+        "androidPackage": "com.genwiseclub.app",
+        "tpap": true,
+        "handles": [
+            "gwaxis"
+        ]
+    },
+    {
+        "name": "Google Pay",
         "androidPackage": "com.google.android.apps.nbu.paisa.user",
-        "androidLink": "https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.paisa.user"
+        "tpap": true,
+        "handles": [
+            "okaxis",
+            "okhdfcbank",
+            "okicici",
+            "oksbi"
+        ]
+    },
+    {
+        "name": "Groww",
+        "androidPackage": "com.nextbillion.groww",
+        "tpap": true,
+        "handles": [
+            "yesg"
+        ]
+    },
+    {
+        "name": "IND Money",
+        "androidPackage": "in.indwealth",
+        "tpap": true,
+        "handles": [
+            "inhdfc"
+        ]
+    },
+    {
+        "name": "Jupiter Money",
+        "androidPackage": "money.jupiter",
+        "tpap": true,
+        "handles": [
+            "jupiteraxis"
+        ]
+    },
+    {
+        "name": "Kiwi",
+        "androidPackage": "in.gokiwi.kiwitpap",
+        "tpap": true,
+        "handles": [
+            "goaxb"
+        ]
+    },
+    {
+        "name": "Kredit.Pe",
+        "androidPackage": "com.kreditpe.android.app",
+        "tpap": true,
+        "handles": [
+            "kphdfc"
+        ]
+    },
+    {
+        "name": "MobiKwik",
+        "androidPackage": "com.mobikwik_new",
+        "tpap": true,
+        "handles": [
+            "ikwik"
+        ]
+    },
+    {
+        "name": "Money View",
+        "androidPackage": "com.whizdm.moneyview.loans",
+        "tpap": true,
+        "handles": [
+            "mvhdfc"
+        ]
+    },
+    {
+        "name": "Navi",
+        "androidPackage": "com.naviapp",
+        "tpap": true,
+        "handles": [
+            "naviaxis"
+        ]
+    },
+    {
+        "name": "Niyo Global",
+        "androidPackage": "finance.global.travel.niyo",
+        "tpap": true,
+        "handles": [
+            "niyoicici"
+        ]
+    },
+    {
+        "name": "One Card",
+        "androidPackage": "in.okcredit.merchant",
+        "tpap": true,
+        "handles": [
+            "oneyes"
+        ]
+    },
+    {
+        "name": "OkCredit",
+        "androidPackage": "",
+        "tpap": true,
+        "handles": [
+            "axb"
+        ]
+    },
+    {
+        "name": "Paytm",
+        "androidPackage": "net.one97.paytm",
+        "tpap": true,
+        "handles": [
+            "paytm",
+            "ptaxis",
+            "pthdfc",
+            "ptsbi",
+            "ptyes"
+        ]
     },
     {
         "name": "PhonePe",
         "androidPackage": "com.phonepe.app",
-        "androidLink": "https://play.google.com/store/apps/details?id=com.phonepe.app"
+        "tpap": true,
+        "handles": [
+            "ybl",
+            "ibl",
+            "axl"
+        ]
+    },
+    {
+        "name": "POPclub",
+        "androidPackage": "com.popclub.android",
+        "tpap": true,
+        "handles": [
+            "yespop"
+        ]
+    },
+    {
+        "name": "Rio Money",
+        "androidPackage": "omnicash.rio.app",
+        "tpap": true,
+        "handles": [
+            "rmrbl"
+        ]
+    },
+    {
+        "name": "Samsung Pay",
+        "androidPackage": "com.samsung.android.samsungpay.gear",
+        "tpap": true,
+        "handles": [
+            "pingpay"
+        ]
+    },
+    {
+        "name": "salaryse",
+        "androidPackage": "com.salaryse.android",
+        "tpap": true,
+        "handles": [
+            "seyes"
+        ]
+    },
+    {
+        "name": "Shriram One",
+        "androidPackage": "com.shriram.one",
+        "tpap": true,
+        "handles": [
+            "shriramhdfcbank"
+        ]
+    },
+    {
+        "name": "slice",
+        "androidPackage": "indwin.c3.shareapp",
+        "tpap": true,
+        "handles": [
+            "sliceaxis"
+        ]
+    },
+    {
+        "name": "super.money",
+        "androidPackage": "money.super.payments",
+        "tpap": true,
+        "handles": [
+            "superyes"
+        ]
+    },
+    {
+        "name": "Tata Neu",
+        "androidPackage": "com.tatadigital.tcp",
+        "tpap": true,
+        "handles": [
+            "tapicici"
+        ]
+    },
+    {
+        "name": "TimePay",
+        "androidPackage": "com.npst.timepay.society",
+        "tpap": true,
+        "handles": [
+            "timecosmos"
+        ]
+    },
+    {
+        "name": "T Wallet",
+        "androidPackage": "com.telangana.twallet",
+        "tpap": true,
+        "handles": [
+            "axisbank"
+        ]
+    },
+    {
+        "name": "Twid Pay",
+        "androidPackage": "com.twid.android",
+        "tpap": true,
+        "handles": [
+            "yestp"
+        ]
+    },
+    {
+        "name": "Ultracash",
+        "androidPackage": "com.ultracash.payment.customer",
+        "tpap": true,
+        "handles": [
+            "idfcbank"
+        ]
+    },
+    {
+        "name": "WhatsApp",
+        "androidPackage": "com.whatsapp",
+        "tpap": true,
+        "handles": [
+            "waicici, @icici",
+            "waaxis",
+            "wahdfcbank",
+            "wasbi"
+        ]
     }
 ]
