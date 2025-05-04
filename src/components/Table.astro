@@ -18,8 +18,10 @@ const { apps, captionTitle } = Astro.props;
         class="text-xs text-gray-700 uppercase border border-pink-100"
     >
         <tr class="bg-white">
-            <th scope="col" class="px-6 py-3 border-r border-pink-100"> App Name </th>
-            <th scope="col" class="px-6 py-3"> Package Name </th>
+            <th scope="col" class="px-6 py-3 border-r border-pink-100 "> App Name </th>
+            <th scope="col" class="px-6 py-3 border-r border-pink-100 "> Package Name </th>
+            <th scope="col" class="px-6 py-3 border-r border-pink-100 "> TPAP </th>
+            <th scope="col" class="px-6 py-3 "> Handle Name </th>
         </tr>
     </thead>
     <tbody>
@@ -28,13 +30,10 @@ const { apps, captionTitle } = Astro.props;
                 <tr
                     class="odd:bg-white even:bg-gray-50 bg-white border-b border-pink-100 hover:bg-gray-50"
                 >
-                    <th
-                        scope="row"
-                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-r border-l border-pink-100"
-                    >
-                        {app.name}
-                    </th>
-                    <td class="px-6 py-4 border-r border-pink-100"> <a href={app.androidLink} class="underline text-pink-700" target="_blank">{app.androidPackage}</a> </td>
+                    <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-r border-l border-pink-100">{app.name}</td>
+                    <td class="px-6 py-4 border-r border-pink-100"> <a href={"https://play.google.com/store/apps/details?id=" + app.androidPackage} class="underline text-pink-700" target="_blank">{app.androidPackage}</a> </td>
+                    <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-r border-l border-pink-100">{app.tpap ? "✔️" : "❌"}</td>
+                    <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-r border-l border-pink-100">{app.handles.map(handle => `@${handle}`).join(", ")}</td>
                 </tr>
             ))
         }

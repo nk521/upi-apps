@@ -5,7 +5,9 @@ import Table from "../components/Table.astro";
 
 const dataPath = path.resolve("./public/apps.json");
 const jsonData = await fs.readFile(dataPath, "utf-8");
-const upiApps = JSON.parse(jsonData);
+const upiApps = JSON.parse(jsonData).sort((a, b) =>
+    a.name.localeCompare(b.name),
+);
 ---
 
 <html lang="en">
@@ -18,11 +20,9 @@ const upiApps = JSON.parse(jsonData);
             rel="stylesheet"
         />
     </head>
-    <body class="bg-gray-50 text-gray-800 font-sans">
-        <main class="max-w-4xl mx-auto p-6">
-            <h1 class="text-4xl font-bold mb-4 mt-4">
-                UPI Apps
-            </h1>
+    <body class="bg-gray-50 text-gray-800 font-sans flex flex-col h-screen">
+        <main class="flex flex-col flex-grow max-w-4xl mx-auto p-6">
+            <h1 class="text-4xl font-bold mb-4 mt-2">UPI Apps</h1>
             <p class="text-gray-600 mb-1">
                 A curated collection of UPI apps, featuring their names, Android
                 package names, and Play Store links.
@@ -31,18 +31,16 @@ const upiApps = JSON.parse(jsonData);
                 You can access this table's JSON source here: <a
                     href="/apps.json"
                     target="_blank"
-                    class="underline"
-                    style="color: #cb2a42;">/apps.json</a
+                    class="underline text-pink-700">/apps.json</a
                 >.
             </p>
 
-            <!-- <div class="overflow-x-auto shadow rounded-lg bg-white p-4">
-                <UpiTable apps={upiApps} />
-            </div> -->
+            <hr class="text-gray-600 mb-5" />
 
-            <hr class="text-gray-600 mb-5"/>
-
-            <div class="relative overflow-x-auto">
+            <div
+                class="relative overflow-x-auto flex-grow mb-5"
+                style="max-height: calc(100vh - 300px);"
+            >
                 <Table apps={upiApps} captionTitle="">
                     <!-- <span slot="captionContent">
                         <p class="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
@@ -50,6 +48,12 @@ const upiApps = JSON.parse(jsonData);
                     </span> -->
                 </Table>
             </div>
+            
+            <hr class="text-gray-600"/>
+
         </main>
+        <footer class="bg-gray-50 p-6 text-center text-sm text-gray-600">
+            Built with headaches (CSS, duh.) by <a href="https://nkmason.dev" class="underline text-pink-700">Nikhil</a>.
+        </footer>
     </body>
 </html>
